@@ -1,0 +1,14 @@
+//readme
+
+version control located at: https://github.com/JhDrathian/Project4
+
+usage:
+	./oss
+	no flags
+
+OSS currently spawns processes until hitting a nanosecond limit. It logs directly to standard output.
+I was able to create the shared memory for the clock, for the process contro table and blocks.
+I was able to create the message queue and pass messages back and forth between the children.
+The children simply read their process control block and terminate currently.
+The shared memory is terminated at the end of parent execution.
+I was not able to implement the round robin queue or multifeedback queue, and therefore did not complete any sophisticated logging or statistics.
